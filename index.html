@@ -4,23 +4,70 @@
   <title>YUMIARY - 유미의 다이어리</title>
   <a href="index.html"><img src="img/banner.png" width="100%"></a>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+       h1{
+         font-size:45px;
+         text-align:center;
+         border-bottom:1px solid gray;
+         padding: 2rem;
+         margin:0;
+       }
+       h2{
+         margin-bottom:0;
+       }
+       p{
+         margin-top:5px;
+       }
+       a{
+         color: black;
+         text-decoration: none;
+       }
+       ul{
+         font-size:20px;
+       }
+       #grid ul{
+         border-right:1px solid gray;
+         width: 70px;
+         margin:0px;
+         padding:30px;
+       }
+       #grid{
+         display: grid;
+         grid-template-columns: 150px 1fr;
+       }
+       #active{
+         background-color: #d5b1e0;
+         color:white;
+       }
+  </style>
 </head>
 
 <body>
+
+  <h1>환영합니다</h1>
+
+<div id="grid">
   <ul>
     <li><a href="profile.html">프로필</a></li>
     <li><a href="journal.html">일기</a></li>
     <li><a href="gallery.html">갤러리</a></li>
   </ul>
-  <h1>Welcome to YUMIARY</h1>
-  <h3>이 사이트는 뭔가요?</h3>
+
+  <div>
+  <h2>이 사이트는 뭔가요?</h2>
   <p>
   유미어리(Yumiary): 유미+다이어리<br>유미의 다이어리를 뜻합니다</p>
-  <h3>유미와 소통하는 법</h3>
+  <h2>유미와 소통하는 법</h2>
   <p>오른쪽 하단에 초록색 버튼을 눌러 유미에게 채팅을 보낼 수 있습니다.<br>
   또 제일 밑에 댓글도 달 수 있습니다 (로그인 해야돼서 좀 번거로움)
+  <p style="font-size:90%;" "font-color:grey"> last update 2020-09-02 10:02PM </p>
+</div>
+</div>
 </p>
-<p style="font-size:90%;" "font-color:grey"> last update 2020-09-02 10:02PM </p>
+
     <!--Start of Tawk.to Script-->
 <script type="text/javascript">
 var Tawk_API=Tawk_API||{}, Tawk_LoadStart=new Date();
@@ -55,5 +102,6 @@ s.setAttribute('data-timestamp', +new Date());
 </script>
 <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
 </p>
+</div>
 </body>
 </html>

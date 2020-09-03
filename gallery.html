@@ -4,37 +4,108 @@
   <title>YUMIARY - 유미의 다이어리</title>
   <a href="index.html"><img src="img/banner.png" width="100%"></a>
   <meta charset="utf-8">
+  <style>
+  body{
+    margin:0;
+  }
+  h1{
+    font-size:45px;
+    text-align:center;
+    border-bottom:1px solid gray;
+    padding: 2rem;
+    margin:0;
+  }
+  h2{
+    margin-bottom:0;
+  }
+  p{
+    margin-top:5px;
+  }
+  a{
+    color: black;
+    text-decoration: none;
+  }
+  ul{
+    font-size:20px;
+  }
+  #grid ul{
+    border-right:1px solid gray;
+    width: 70px;
+    margin:0px;
+    padding:30px;
+  }
+  #grid{
+    display: grid;
+    grid-template-columns: 150px 1fr;
+  }
+  #big_gallery{
+    display:grid;
+    grid-template-rows: auto;
+  }
+  .gallery{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+  #active{
+    background-color: #d5b1e0;
+    color:white;
+  }
+  .gallery img{
+    width:100%;
+  }
+  </style>
 </head>
 
 <body>
+  <h1>갤러리</h1>
+  갤러리 배치어떡하징
+<div id="gird">
   <ul>
     <li><a href="profile.html">프로필</a></li>
     <li><a href="journal.html">일기</a></li>
-    <li><a href="gallery.html">갤러리</a></li>
+    <li><a href="gallery.html" id="active">갤러리</a></li>
   </ul>
-<h1>갤러리</h1>
-<img src="img/gallery/cute.JPG" width=24%>
-<img src="img/gallery/cute2.JPG" width=24%>
-<img src="img/gallery/cute3.JPG" width=24%>
-<img src="img/gallery/cute4.JPG" width=24%>
-<img src="img/gallery/명례.jpg" width=24%>
-<img src="img/gallery/graduate.jpg" width=24%>
-<img src="img/gallery/graduate-1.jpg" width=24%>
-<img src="img/gallery/학생증.jpg" width=24%>
-<img src="img/gallery/flower-in-pink.jpg" width=24%>
-<img src="img/gallery/gift.jpg" width=24%>
-<img src="img/gallery/jalnaom.jpg" width=24%>
-<img src="img/gallery/scary.jpg" width=24%>
-<img src="img/gallery/school-uni.jpg" width=24%>
-<img src="img/gallery/yongwongo.jpg" width=24%>
-<img src="img/gallery/study.jpg" width=24%>
-<img src="img/gallery/sooryun.jpg" width=24%>
-<img src="img/gallery/star.jpg" width=24%>
-<img src="img/gallery/wak.jpg" width=24%>
-<img src="img/gallery/withzoo.jpg" width=24%>
-<img src="img/gallery/face-change.jpg" width=24%>
-<img src="img/gallery/bluesky.jpg" width=24%>
-<img src="img/gallery/byeongsin.jpg" width=40%>
-<img src="img/gallery/cafe2.jpg" width=24%>
+
+<div>
+<div id="big_gallery">
+<div class="gallery">
+<img src="img/gallery/cute.jpg">
+<img src="img/gallery/cute2.jpg">
+<img src="img/gallery/cute3.jpg">
+<img src="img/gallery/cute4.jpg">
+</div>
+<div class="gallery">
+<img src="img/gallery/명례.jpg">
+<img src="img/gallery/graduate.jpg">
+<img src="img/gallery/graduate-1.jpg">
+<img src="img/gallery/학생증.jpg">
+</div>
+<div class="gallery">
+<img src="img/gallery/flower-in-pink.jpg">
+<img src="img/gallery/gift.jpg">
+<img src="img/gallery/jalnaom.jpg">
+<img src="img/gallery/scary.jpg">
+</div>
+<div class="gallery">
+<img src="img/gallery/school-uni.jpg">
+<img src="img/gallery/yongwongo.jpg">
+<img src="img/gallery/study.jpg">
+<img src="img/gallery/sooryun.jpg">
+</div>
+<div class="gallery">
+<img src="img/gallery/star.jpg">
+<img src="img/gallery/wak.jpg">
+<img src="img/gallery/withzoo.jpg">
+<img src="img/gallery/face-change.jpg">
+</div>
+<div class="gallery">
+<img src="img/gallery/bluesky.jpg">
+<img src="img/gallery/byeongsin.jpg">
+<img src="img/gallery/cafe2.jpg">
+</div>
+</div>
+</div>
+</div>
+
 </body>
 </html>
