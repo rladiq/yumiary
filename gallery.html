@@ -4,66 +4,48 @@
   <title>YUMIARY - 유미의 다이어리</title>
   <a href="index.html"><img src="img/banner.png" width="100%"></a>
   <meta charset="utf-8">
+  <link rel="stylesheet" href="style.css">
   <style>
-  body{
-    margin:0;
-  }
-  h1{
-    font-size:45px;
-    text-align:center;
-    border-bottom:1px solid gray;
-    padding: 2rem;
-    margin:0;
-  }
-  h2{
-    margin-bottom:0;
-  }
-  p{
-    margin-top:5px;
-  }
-  a{
-    color: black;
-    text-decoration: none;
-  }
-  ul{
-    font-size:20px;
-  }
-  #grid ul{
-    border-right:1px solid gray;
-    width: 70px;
-    margin:0px;
-    padding:30px;
-  }
-  #grid{
-    display: grid;
-    grid-template-columns: 150px 1fr;
-  }
-  #big_gallery{
-    display:grid;
-    grid-template-rows: auto;
-  }
-  .gallery{
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-  }
-  #active{
-    background-color: #d5b1e0;
-    color:white;
-  }
-  .gallery img{
-    width:100%;
-  }
+       #big_gallery{
+         display:block;
+         grid-auto-rows: 100px;
+       }
+       .gallery{
+         display: flex;
+       }
+       #active{
+         background-color: #d5b1e0;
+         color:white;
+       }
+       .gallery img{
+         width:25%;
+       }
+       @media(max-width:800px){
+         #grid{
+           display: block;
+         }
+         #grid ul{
+           border: none;
+         }
+          h1{
+          border-bottom: none;
+          font-size:30px;
+         }
+         ul{
+           font-size:15px;
+         }
+
   </style>
 </head>
 
 <body>
   <h1>갤러리</h1>
-  갤러리 배치어떡하징
 <div id="gird">
   <ul>
     <li><a href="profile.html">프로필</a></li>
     <li><a href="journal.html">일기</a></li>
     <li><a href="gallery.html" id="active">갤러리</a></li>
+    <li><a href="assistant.html">어시스턴트</a></li>
   </ul>
 
 <div>
